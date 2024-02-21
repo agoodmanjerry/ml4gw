@@ -13,7 +13,7 @@ class SnrRescaler(FittableSpectralTransform):
         sample_rate: float,
         waveform_duration: float,
         highpass: Optional[float] = None,
-        dtype: torch.dtype = torch.float32,
+        dtype: torch.dtype = torch.float64,
     ) -> None:
         super().__init__()
         self.highpass = highpass
